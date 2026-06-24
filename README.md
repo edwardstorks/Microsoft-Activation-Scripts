@@ -9,36 +9,31 @@
 ## Download / How to use it?
 
 ### Method 1 - PowerShell ❤️
-Click the Start Menu, type PowerShell, and open it.
 
-Copy and paste the code below and press Enter.
+1. Click the **Start Menu**, type `PowerShell`, and open it.
 
-For Windows 8.1, 10 and 11:
-irm https://get.activated.win | iex
-If the above is blocked (by ISP/DNS), try this (needs updated Windows 10 or 11):
-iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
-Script not launching? Use the below-listed Method 2.
-In the menu that appears, type the number corresponding to one of the Green options.
-</details>
+2. Copy and paste the code below and press **Enter.**  
+   - For **Windows 8.1, 10 and 11**:
+     ```
+     irm https://get.activated.win | iex
+     ```
+	 If the above is blocked (by ISP/DNS), try this (needs updated Windows 10 or 11):  
+	 ```
+	 iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
+	 ```
+	- **Script not launching? Use the below-listed Method 2.**
+
+3. In the menu that appears, type the number corresponding to one of the **Green** options.
 
 ---
 
-### Method 2 - Traditional (Windows 7 and later)
+### Method 2 - Traditional (Windows Vista and later)
 
-<details>
-  <summary>Click here for info</summary>
-
-1.   Download the file using the links provided below.  
-`https://github.com/massgravel/Microsoft-Activation-Scripts/archive/refs/heads/master.zip`  
-or  
-`https://git.activated.win/massgrave/Microsoft-Activation-Scripts/archive/master.zip`
-2.   Right-click on the downloaded zip file and extract
-3.   In the extracted folder, find the folder named `All-In-One-Version`
-4.   Run the file named `MAS_AIO.cmd`
-5.   You will see the activation options, follow the on-screen instructions.
-6.   That's all.
-
-</details>
+1.   Download the script:
+      *   [**MAS_AIO.cmd**](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&download=true) (Direct script)
+      *   [**MAS_AIO.zip**](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?$format=zip) (If the direct script is blocked by your browser)
+2.   Run the `MAS_AIO.cmd` file.
+3.   In the menu that appears, type the number corresponding to one of the **Green** options.
 
 ---
 
@@ -47,6 +42,18 @@ or
 > - The IRM command in PowerShell downloads a script from a specified URL, and the IEX command executes it.
 > - Always double-check the URL before executing the command and verify the source if manually downloading files.
 > - Be cautious, as some spread malware disguised as MAS by using different URLs in the IRM command.
+
+---
+
+> [!TIP]
+> - Some ISPs/DNS providers block access to our domains. You can bypass this by enabling [DNS-over-HTTPS (DoH)](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/encrypted-dns-browsers/) in your browser. 
+> - **Having trouble**? Visit our [troubleshooting page](https://massgrave.dev/troubleshoot) or raise an issue on [GitHub](https://github.com/massgravel/Microsoft-Activation-Scripts/issues).
+
+> [!NOTE]
+>
+> - The `irm` command in PowerShell downloads a script from a specified URL, and the `iex` command executes it.
+> - Always double-check the URL before executing the command and verify the source is trustworthy when manually downloading files.
+> - Be cautious of third parties spreading malware disguised as MAS by altering the URL in the PowerShell command.
 
 ---
 
