@@ -60,8 +60,8 @@
 To run the scripts in unattended mode, check [here](https://massgrave.dev/command_line_switches).
 
 ```
-Latest Version: 2.9
-Release date: 20-Dec-2024
+Latest Version: 9.3
+Release date: 25-Jun-2026
 ```
 
 ### [Troubleshooting / Help](https://massgrave.dev/troubleshoot)
