@@ -8,25 +8,17 @@
   
 ## Download / How to use it?
 
-### Method 1 - PowerShell (Windows 8 and later) ❤️
+### Method 1 - PowerShell ❤️
+Click the Start Menu, type PowerShell, and open it.
 
-1.   Open PowerShell (Not CMD). To do that, right-click on the Windows start menu and select PowerShell or Terminal.
-2.   Copy and paste the code below and press enter  
-```
+Copy and paste the code below and press Enter.
+
+For Windows 8.1, 10 and 11:
 irm https://get.activated.win | iex
-```
-3.   You will see the activation options. Choose (1) HWID for Windows activation. Choose (2) Ohook for Office activation.
-4.   That's all.
-
-<details>
-  <summary>More options</summary>
-
-- Alternatively, you can use the following (It will be deprecated in the future.)
-```
-irm https://massgrave.dev/get | iex
-```
-- The URL `get.activated.win` might be blocked by some DNS services because it is a new domain.
-
+If the above is blocked (by ISP/DNS), try this (needs updated Windows 10 or 11):
+iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
+Script not launching? Use the below-listed Method 2.
+In the menu that appears, type the number corresponding to one of the Green options.
 </details>
 
 ---
